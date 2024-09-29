@@ -1,0 +1,145 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("./fundo.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+header {
+    background-color: #000c43;
+    color: rgb(0, 231, 177);
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    width: 100%;
+    margin-top: -10px;
+}
+img{
+    width: 50px;
+}
+h1{
+    font-size: 27px;
+}
+h2{
+    font-size: 25px;
+}
+.mini-header {
+    background-color: rgb(0, 231, 177); 
+    color: #000c43; 
+    text-align: center; 
+    padding: 0.01px;
+    font-size: 12px; 
+    font-weight: bold;
+    margin-bottom: 30px; /* margem inferior pra separar do resto do conteúdo */
+}
+.mini-header p{
+    margin: 0;
+}
+
+/* container principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 20px;
+    gap: 70px;
+}
+
+/* estilo dos 2 containers individuais */
+.converter, .calculadora {
+    background-color: #000c43;
+    border: 1px solid #000c43;
+    padding: 20px;
+    box-shadow: 8px 8px #000c43;
+    width: 25%;
+}
+
+/* títulos dos 2 containers */
+.converter h2, .calculadora h2 {
+    text-align: center;
+    color: rgb(0, 231, 177);
+}
+
+/* centralizar os elementos dentro de cada container */
+.converter p, .calculadora p {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 231, 177);
+}
+
+/* input e select */
+input[type="text"], select {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    display: block; /* mudei pra block pra garantir que eles ocupem toda a largura disponível da pagina */
+    margin-left: auto; /* centralizar horizontalmente */
+    margin-right: auto; /* centralizar horizontalmente */
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(0, 231, 177);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+/* quando passa por cima */
+button:hover {
+    background-color: #a6ac64;
+}
+.botaocontainer {
+    text-align: center; 
+    margin: 10px 0; /* margem para separar do conteúdo acima e abaixo */
+}
+/* estilo dos resultados */
+#resultadoconversao, #resultadoCalculoEmTodasBases {
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(0, 231, 177); 
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#resultadoCalculoEmTodasBases p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* estilo para exibir os resultados */
+#resultadoBinario, #resultadoOctal, #resultadoDecimal, #resultadoHexadecimal {
+    color: rgb(0, 231, 177);
+}
+footer {
+    background-color: #000c43; 
+    color: rgb(0, 231, 177); 
+    font-weight: bold;
+    text-align: center; 
+    padding: 7px; 
+    width: 100%; 
+}
+.luanaliriel{
+    color:#a6ac64;
+}

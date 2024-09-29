@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lua's Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- header com a frase da querida Marise -->
+    <header>
+        
+        <h1><span class="luanaliriel"><img src="./logo.png">/* </span>Lua's Machine <span class="luanaliriel">*/</span></h1>
+    </header>
+
+
+    <div class="mini-header">
+        <p>Binário é, de fato, o caminho da luz!</p>
+    </div>
+
+
+
+
+
+    <!-- container principal com os dois containers um do lado do outro -->
+    <div class="container">
+
+        <!-- container do conversor -->
+        <div class="converter">
+            <h2>Conversor</h2>
+
+            <p>Convertendo de:
+                <select id="base1">
+                    <option value="" disabled selected>Selecione a base</option>
+                    <option value="2">Binário</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+            </p>
+
+
+            <p><input type="text" id="valorparaserconvertido" placeholder="Digite o número para converter"></p>
+
+            <p><button onclick="converterBase()">Converter</button></p>
+            
+            <div id="resultadoconversao"></div>
+        </div>
+
+
+
+
+
+
+        <!-- container da calculadora -->
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <!-- selecionando a base de cada número inserido -->
+            <p>Selecione a base do primeiro número:</p>
+            <select id="basePrimeiroNumero">
+                <option value="" disabled selected>Selecione a base</option>
+                <option value="2">Binário</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <input type="text" id="Numero1Inserido" placeholder="Ex: 100">
+
+            <p>Selecione a base do segundo número:</p>
+            <select id="baseSegundoNumero">
+                <option value="" disabled selected>Selecione a base</option>
+                <option value="2">Binário</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <input type="text" id="Numero2Inserido" placeholder="Ex: 200">
+
+            <div class="botaocontainer">
+                <button onclick="somar()">+</button>
+                <button onclick="subtrair()">-</button>
+                <button onclick="multiplicar()">*</button>
+                <button onclick="dividir()">/</button>
+            </div>
+
+            <!-- div pra exibir o resultado em todas as bases -->
+            <div id="resultadoCalculoEmTodasBases">
+                <p>Resultado em binário: <span id="resultadoBinario"></span></p>
+                <p>Resultado em octal: <span id="resultadoOctal"></span></p>
+                <p>Resultado em decimal: <span id="resultadoDecimal"></span></p>
+                <p>Resultado em hexadecimal: <span id="resultadoHexadecimal"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p> <span class="luanaliriel">© 2024</span> | Feito com muito carinho por <span class="luanaliriel">Luana
+                Liriel</span>, obrigada por visitar!</p>
+    </footer>
+
+
+</body>
+
+</html>
